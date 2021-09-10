@@ -70,3 +70,27 @@ C++ Operators :-
   delete : releases a memory after optionally calling a destructor.
   new[] : allocates memory for an array.
   delete[] : deletes memory for an array.
+
+
+Memory Leaks :- 
+
+  -> caused when memory is allocated but not released afterwords.
+  -> The address of the memory can be lost and the memory can never be reclaimed.
+  -> If this happes with large allocations and or repetedly while the programming is running, heap will run out of the memory.
+      -> may cause OS to increase the pagefile size.
+      -> will drastically reduce the performance of the system.
+      -> your program will be killed by the OS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
