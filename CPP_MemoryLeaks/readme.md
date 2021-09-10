@@ -59,7 +59,7 @@ Memory Issues :-
     -> No freeing memory after it is no longer required.
 
 
-Buffer Overflow :- 
+Buffer Overflow(Stack) :- 
 
    -> Memory overwrie :- 
   
@@ -67,3 +67,34 @@ Buffer Overflow :-
         -> Data stored in this memory may overflow into sorrounding area.
         -> Leads to loss of data or worse, program crash.
         -> use standard library containers, because these manages storing of data automatically.
+        -> with buffer overflow program has undefined behaviour.
+        
+        
+        
+   Buffer Overflow(Heap) :- 
+   
+        -> //gives exception, heap exception detected
+        
+        
+        
+   Dangling Pointers :- 
+
+     -> if memory adress is in heap, that means memory is allocated with new.once we are done with the memory, we delete the pointer.but after deleting the memory the address
+        still remains in the pointer.
+     -> so the pointer continues to point to the memory address which is no longer valid because we have deleted it.
+     -> this type of pointer which points to invalid memory is called invalid memory.
+     -> This can cause two problems :- 
+            -> double deleting a pointer causes undefined behaviour.most of the time program may crash.
+            -> we may use the pointer without knowing its dangling.
+
+  Avoiding dangling pointers :- 
+
+      -> assign nullptr immediately after deleting it.
+      -> if the pointer is accessed again it will cause an access violation.
+      -> deleting a nullptr is not an error, it treats it as no operation
+
+
+
+
+
+
