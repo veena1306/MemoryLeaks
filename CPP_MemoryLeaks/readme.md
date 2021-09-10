@@ -34,3 +34,20 @@ When we write �
      -> standard library uses placement new in allocators.
      
    Syntax:   int *ptr = new(<memory_address>)Type{};
+
+
+=> diff between malloc/calloc and new 
+
+     ->                 malloc                                                          new
+      1.              function                                                         operator
+           requires size during allocation                            size is ascertained from the type.
+           can not inilialize memory                                  can inilialize memory
+           can't call constructors                                    can call constructors
+           returns void pointers that needs to be                     returns correct type of pointers
+           typecasted
+           can't customized                                            can customized through overloading
+           returnd null on failure.                                     throws exception on failure
+
+
+
+
