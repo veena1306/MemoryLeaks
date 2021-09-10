@@ -64,3 +64,9 @@ Why allocation functions doesn't work with c++ :-
    4. return NULL on failure.
 
 
+C++ Operators :- 
+
+  new :  allocates memory and optionally initializes it(by calling constructor)
+  delete : releases a memory after optionally calling a destructor.
+  new[] : allocates memory for an array.
+  delete[] : deletes memory for an array.
