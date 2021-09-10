@@ -50,4 +50,14 @@ When we write �
 
 
 
+Memory Issues :- 
+
+    -> allocating insufficient memory that leads to overwrite.
+    -> accessing memory after is has been freed.
+    -> accessing memory after it has been freed.
+    -> freeing same memory twice.
+    -> No freeing memory after it is no longer required.
+
+
+ 
 
