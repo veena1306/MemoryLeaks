@@ -57,5 +57,10 @@ Why Dynamic Memory :-
   4. more control over lifetime of data., as lifetime of stack based data has limited by scope.
   5. creating large objects.
 
+Why allocation functions doesn't work with c++ :- 
+   1. cannot initialize memory.
+   2. constructors can not be invoked during allocation.
+   3. destructors can not be invoked during allocation.
+   4. return NULL on failure.
 
 
