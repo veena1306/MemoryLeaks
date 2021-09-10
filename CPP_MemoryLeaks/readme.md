@@ -59,5 +59,11 @@ Memory Issues :-
     -> No freeing memory after it is no longer required.
 
 
- 
+Buffer Overflow :- 
 
+   -> Memory overwrie :- 
+  
+        -> caused when insufficient memory is allocated.
+        -> Data stored in this memory may overflow into sorrounding area.
+        -> Leads to loss of data or worse, program crash.
+        -> use standard library containers, because these manages storing of data automatically.
